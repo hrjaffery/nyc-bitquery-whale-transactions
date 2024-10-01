@@ -524,3 +524,12 @@ background-size:60px 60px;
   
   
 }
+
+
+.bar-chart{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

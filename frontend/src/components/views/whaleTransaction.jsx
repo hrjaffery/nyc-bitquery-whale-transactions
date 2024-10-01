@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
+import 'chart.js/auto'; 
 
 const WhaleTransactionsChart = () => {
   const [whaleData, setWhaleData] = useState([]);
@@ -51,8 +52,10 @@ const WhaleTransactionsChart = () => {
 
   return (
     <div>
-      <h2>Top 10 Whale Transactions (Binance Network)</h2>
+      <h2 className="text-center text-white">Top 10 Whale Transactions (Binance Network)</h2>
+      <div className="bar-chart">
       <Bar data={data} options={options} />
+      </div>
     </div>
   );
 };
